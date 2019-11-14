@@ -62,6 +62,9 @@ variable and how to fix it here for [windows][win-path] or
 
 MIT
 
+[npm]: https://www.npmjs.com/
+[node]: https://nodejs.org
+[git]: https://git-scm.com/
 [win-path]:
   https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
 [mac-path]: http://stackoverflow.com/a/24322978/971592
