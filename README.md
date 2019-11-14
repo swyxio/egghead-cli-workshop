@@ -16,6 +16,8 @@ following:
       [Use Zoom for KCD Workshops](https://egghead.io/lessons/egghead-use-zoom-for-kcd-workshops)
       (~8 minutes).
 - [ ] Read [12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46) or Watch [Rules for creating great developer CLIs](https://devrel.net/developer-experience/rules-for-creating-great-developer-clis) (20 mins)
+- [ ] Write down 2-3 small Node.js CLI's you'd like to explore (points if I haven't heard of them!)
+- [ ] (Optional) Browse the [CLI Cheatsheet](https://github.com/sw-yx/cli-cheatsheet)
 
 The more prepared you are for the workshop, the better it will go for you.
 
@@ -41,8 +43,8 @@ variable and how to fix it here for [windows][win-path] or
 ## Structure
 
 - Create a Hello World Single-Command CLI with Oclif
-- Understand when to use Multi-Command vs Single-Command in Oclif
 - Parse Arguments and Flags in an Oclif Command
+- Understand when to use Multi-Command vs Single-Command in Oclif
 - Set up Testing for Oclif CLI's
 - Read User Config with Cosmiconfig
 - Build Your Own Boilerplate Scaffolding CLI with Copy-Template-Dir and EJS
@@ -58,4 +60,4 @@ variable and how to fix it here for [windows][win-path] or
 
 ## License
 
-This Workshop is MIT licensed.
+MIT
