@@ -1,9 +1,9 @@
-# Set up Testing for Oclif CLI's
+# Set up Debugging and Testing for CLI's
 
 Install dependencies
 
 ```bash
-yarn add jest
+yarn add debug jest
 yarn add -D @oclif/test # v1 at time of writing
 
 ## for typescript

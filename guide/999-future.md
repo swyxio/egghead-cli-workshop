@@ -1,9 +1,20 @@
+# Future
+
+What is the future of CLI's? 
+
+- Rust rewrites https://swc-project.github.io/
+- UI CLI's? [Vue is leading the way](https://twitter.com/swyx/status/1074389991613128705)
+- [More Adaptive CLI's](https://www.youtube.com/watch?v=ZueoIYnHiaI&feature=emb_title)
+
 ## Last Notes
 
 At the end of the day, Node CLI's are just Node programs with user interfaces. Much of the advanced Node CLI questions you'll have are the same as Node questions.
 
 - Cross Platform: According to the 2018 Node.js user survey, 24% of Node.js developers use Windows locally and 41% use Mac. In production 85% use Linux and 1% use BSD.
   - https://github.com/ehmicky/cross-platform-node-guide
+- Node TSC Working Groups:
+	- https://nodejs.org/en/about/working-groups/
+	- Node.js Tooling Group https://github.com/nodejs/tooling
 - More workshops on Advanced Node:
 	- Digging into Node with Kyle Simpson: https://frontendmasters.com/workshops/digging-into-node/
 	- https://frontendmasters.com/learn/node-js/
@@ -22,7 +33,7 @@ Keep up to date on the state of the art on CLI's:
 
 - https://github.com/sw-yx/cli-cheatsheet
 
-## Other Ink Components
+## One last Command
 
 There are a TON of other Ink components - it is still early days! Here's a fun one:
 
