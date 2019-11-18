@@ -16,7 +16,7 @@ function SearchQuery() {
   return (
     <Box>
       <Gradient name="pastel">
-        <BigText text="Netlify Dev" />
+        <BigText text="Go Make CLI's!" />
       </Gradient>
     </Box>
   );

@@ -1,4 +1,4 @@
-# Create Accessible Full Fledged User Interfaces with React Ink Input Components
+# Create Dynamic Command Line User Interfaces with React Ink Input Components
 
 Although `enquirer` gives us a lot out of the box, we might be able to create more interesting CLI UI's with React Ink because of its layout approach. We can take advantage of some first party inputs:
 

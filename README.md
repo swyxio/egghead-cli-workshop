@@ -46,7 +46,7 @@ variable and how to fix it here for [windows][win-path] or
   - 1A: Create a Hello World Single-Command CLI with Oclif
   - 1B: Parse Arguments and Flags in an Oclif Command
   - 1C: Understand when to use Multi-Command vs Single-Command in Oclif
-  - 1D: Set up Testing for Oclif CLI's
+  - 1D: Set up Debugging and Testing for CLI's
 - 2 - Heavy Lifting
   - 2A: Beautiful Prompts for User Input with Enquirer
   - 2B: Read User Config with Cosmiconfig
@@ -60,7 +60,7 @@ variable and how to fix it here for [windows][win-path] or
 - 4 - React Ink
   - 4A: Build Interactive CLI Components with React Ink
   - 4B: Create Flexible CLI Layouts with React Ink's Box Component
-  - 4C: Create Accessible Full Fledged User Interfaces with React Ink Input Components
+  - 4C: Create Dynamic Command Line User Interfaces with React Ink Input Components
 
 ## License
 
