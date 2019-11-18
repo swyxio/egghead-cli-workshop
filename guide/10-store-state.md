@@ -92,3 +92,8 @@ prompt.run()
   .then(answer => console.log('Answer:', answer))
   .catch(console.error);
 ```
+
+## Principles
+
+- Offer to persist state when possible to create defaults
+- If you have an input, you should have autocomplete of past 3-5 things so user can hit down

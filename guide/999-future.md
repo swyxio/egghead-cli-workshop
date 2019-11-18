@@ -88,3 +88,8 @@ Other inbuilt gradients:
 	'pastel',
 	'rainbow'
 ```
+
+## Call to Action
+
+- Take a thing you do everyday and wrap it into a CLI
+- Look at an Open Source project that doesn’t have a CLI, and add one on top of it (e.g. gatsby new, gatsby develop, gatsby build, gatsby clean).

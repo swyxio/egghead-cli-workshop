@@ -91,6 +91,7 @@ We can see that `args.file` is only really used when `flags.force` is used. Let'
 # hello world from ./src/index.ts
 # you input --force and --file: potato
 ```
+## Flags win Arguments
 
 Args are positional, flags are named.
 

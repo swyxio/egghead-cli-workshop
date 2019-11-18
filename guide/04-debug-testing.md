@@ -140,3 +140,8 @@ describe('hello', () => {
     })
 })
 ```
+
+## Principles
+
+- Always test on Windows/Linux (Circle CI/GH Actions matrix may be best bet here)
+- OClif provides debug logging by default. Log levels: “More info is nice, until there’s too much to see”. Log levels help filter for the thing you’re looking for by using a regex. 

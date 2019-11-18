@@ -232,3 +232,7 @@ function Summary({ isFinished, passed, failed, time }: any) {
 }
 
 ```
+
+## Principles
+
+- GUI vs. CLI apps come down to “Discoverability vs. Utility”. Utility as in “I have this in my head and it happens” vs. “Discovering the things I can do”. React-Ink helps you shift the CLI to more discoverable.

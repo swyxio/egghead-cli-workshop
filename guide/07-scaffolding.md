@@ -72,3 +72,9 @@ To do some projects, especially if you are wrapping CLI's, you will want to scaf
 ### Low level copying
 
 It is easy to `fs.writeFileSync` all the time, but you may run into scaling issues with large files as well as parallel processing. The best practice is to use Node streams. Of course there are some libraries that help, e.g. https://www.npmjs.com/package/cpy. Generally this is an optimization step you won't have to worry about most of the time.
+
+## Principles
+
+- Scaffolding is nice to have “caramel not sugar”.
+- “Remote vs. Local templates”- templates are either shipped with the CLI, or remotely downloaded. URL assumes you’re online A) slowing you down B) have to be online. Default attitude for Node.js is “you’re online”. 
+- If you don’t split templates from CLI, you have to keep telling people to bump versions (e.g. create-react-app never updates, just the react-scripts)

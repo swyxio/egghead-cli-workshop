@@ -116,3 +116,9 @@ npm install ora
 ## Exercise
 
 Write a command where you load and display user data, nicely colorized, with an appropriate spinner. 
+
+## Principles
+
+- Colors should work on light & dark backgrounds but shouldn’t be the sole indicator. (e.g. warning shouldn’t be “pink text” but be “warning: pink text”)
+- There’s a higher bar for responsiveness in CLI's - hitting enter should show something to show the CLI accepted input
+-  Don’t clear screen- it’s hostile to other CLIs. Respect that others may be operating alongside.
