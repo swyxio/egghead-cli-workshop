@@ -1,0 +1,12 @@
+diff --git a/node_modules/@oclif/config/lib/plugin.js b/node_modules/@oclif/config/lib/plugin.js
+index 2f72fbc..fa8dcb9 100644
+--- a/node_modules/@oclif/config/lib/plugin.js
++++ b/node_modules/@oclif/config/lib/plugin.js
+@@ -81,6 +81,7 @@ class Plugin {
+         this._debug(`loading IDs from ${this.commandsDir}`);
+         const patterns = [
+             '**/*.+(js|ts)',
++            '**/*.+(js|ts)x', // add this
+             '!**/*.+(d.ts|test.ts|test.js|spec.ts|spec.js)',
+         ];
+         const ids = globby.sync(patterns, { cwd: this.commandsDir })

@@ -42,21 +42,25 @@ variable and how to fix it here for [windows][win-path] or
 
 ## Structure
 
-- Create a Hello World Single-Command CLI with Oclif
-- Parse Arguments and Flags in an Oclif Command
-- Understand when to use Multi-Command vs Single-Command in Oclif
-- Set up Testing for Oclif CLI's
-- Read User Config with Cosmiconfig
-- Build Your Own Boilerplate Scaffolding CLI with Copy-Template-Dir and EJS
-- Execute and Pipe Child Processes with Execa
-- Beautiful Prompts for User Input with Enquirer
-- Store State on Filesystem in CLI's respecting XDG-spec with Conf
-- Create CLI's that Intelligently Adapt to Usage with Frecency
-- Prompt Users to Update CLI Versions with Update Notifier
-- Polish CLI Output with Ora, CLI-UX, and Chalk
-- Build Interactive CLI Components with React Ink
-- Create Flexible CLI Layouts with React Ink's Box Component
-- Create Accessible Full Fledged User Interfaces with React Ink Input Components
+- 1 - CLI Basics
+  - 1A: Create a Hello World Single-Command CLI with Oclif
+  - 1B: Parse Arguments and Flags in an Oclif Command
+  - 1C: Understand when to use Multi-Command vs Single-Command in Oclif
+  - 1D: Set up Testing for Oclif CLI's
+- 2 - Heavy Lifting
+  - 2A: Beautiful Prompts for User Input with Enquirer
+  - 2B: Read User Config with Cosmiconfig
+  - 2C: Build Your Own Boilerplate Scaffolding CLI with Copy-Template-Dir
+  - 2D: Execute and Pipe Child Processes with Execa
+- 3 - Polish
+  - 3A: Prompt Users to Update CLI Versions with Update Notifier
+  - 3B: Store State on Filesystem in CLI's respecting XDG-spec with Conf
+  - 3C: Create CLI's that Intelligently Adapt to Usage with Frecency
+  - 3D: Polish CLI Output with Ora, CLI-UX, and Chalk
+- 4 - React Ink
+  - 4A: Build Interactive CLI Components with React Ink
+  - 4B: Create Flexible CLI Layouts with React Ink's Box Component
+  - 4C: Create Accessible Full Fledged User Interfaces with React Ink Input Components
 
 ## License
 
