@@ -1,8 +1,11 @@
 
 # CLI Workshop
 
+
 👋 hi there! My name is [swyx](https://swyx.io) and this is the
 source material for [the Egghead CLI workshop!](https://swyx.io/teaching/CLI)!
+
+![image](https://user-images.githubusercontent.com/6764957/69071656-3c6d6b80-0a65-11ea-8aad-2ceeff65f913.png)
 
 ## Pre-Workshop Instructions/Requirements
 

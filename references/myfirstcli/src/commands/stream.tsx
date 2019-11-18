@@ -16,7 +16,7 @@ function SearchQuery() {
   return (
     <Box>
       <Gradient name="pastel">
-        <BigText text="Go Make CLI's!" />
+        <BigText text="🌈 CLI Workshop!" />
       </Gradient>
     </Box>
   );
