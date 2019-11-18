@@ -4,6 +4,7 @@ What is the future of CLI's?
 
 - Rust rewrites https://swc-project.github.io/
 - UI CLI's? [Vue is leading the way](https://twitter.com/swyx/status/1074389991613128705)
+- Dry run CLI's https://github.com/gatsbyjs/gatsby/issues/16384
 - [More Adaptive CLI's](https://www.youtube.com/watch?v=ZueoIYnHiaI&feature=emb_title)
 
 ## Last Notes

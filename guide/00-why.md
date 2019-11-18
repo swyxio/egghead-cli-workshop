@@ -38,6 +38,7 @@ Developer facing Companies all have large CLI's in production:
 - [AWS](https://aws.amazon.com/cli/)
 - [Serverless](https://serverless.com/cli/)
 - [Zeit](https://zeit.co/download)
+- [Netlify](https://www.netlify.com/products/dev/?utm_source=workshop&utm_medium=swyxcli&utm_campaign=devex)
 
 ## Developer Tool Mastery
 
@@ -58,6 +59,15 @@ You already use CLI's EVERYWHERE:
 - now/netlify/amplify
 
 When you run into problems with any CLI's you use, being able to deconstruct which causing problems is super helpful.
+
+## Who am I
+
+I have a love affair with CLI's:
+
+- I wrote [create-react-app-parcel](https://www.npmjs.com/package/create-react-app-parcel)
+- and did a [talk about the history of Create-React-App](https://www.youtube.com/watch?v=Et571vTAtT8)
+- and have contributed and studied both `gatsby` and `tsdx` as CLI's
+- I was the lead CLI dev on [Netlify Dev](https://news.ycombinator.com/item?id=19615546)
 
 ## A note on Node
 
