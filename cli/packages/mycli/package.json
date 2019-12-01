@@ -1,0 +1,42 @@
+{
+  "name": "mycli",
+  "version": "0.0.0",
+  "author": "swyx @sw-yx",
+  "bin": {
+    "mycli": "./bin/run"
+  },
+  "bugs": "https://github.com/sw-yx/mycli/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@types/node": "^10",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/sw-yx/mycli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "mycli"
+  },
+  "repository": "sw-yx/mycli",
+  "scripts": {
+    "prepack": "rm -rf lib && tsc -b",
+    "test": "echo NO TESTS"
+  },
+  "types": "lib/index.d.ts"
+}
