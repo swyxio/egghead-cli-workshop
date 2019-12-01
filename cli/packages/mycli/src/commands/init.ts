@@ -24,6 +24,7 @@ class Mycli extends Command {
     // console.log(argv);
     const name = flags.name || "world";
     this.log(`hello egghead ${name} from ./src/index.ts`);
+    debugger;
   }
 }
 
