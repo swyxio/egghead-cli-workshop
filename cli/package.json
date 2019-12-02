@@ -3,5 +3,8 @@
   "workspaces": [
     "packages/*",
     "example"
-  ]
+  ],
+  "dependencies": {
+    "enquirer": "^2.3.2"
+  }
 }
