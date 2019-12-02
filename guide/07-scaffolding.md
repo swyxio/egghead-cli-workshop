@@ -30,7 +30,7 @@ const copy = require('copy-template-dir')
 const path = require('path')
  
 const vars = { foo: 'bar' }
-const inDir = path.join(process.cwd(), 'templates') // careful! see below
+const inDir = path.resolve(__dirname, '../templates') // careful! see below
 const outDir = path.join(process.cwd(), 'dist')
  
 copy(inDir, outDir, vars, (err, createdFiles) => {
