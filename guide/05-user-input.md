@@ -12,7 +12,7 @@ Of course, you could write your own using raw Node.js, but you'd have to impleme
 
 </b>
 </summary>
-For example, oclif itself ships a basic `oclif-ux` library:
+For example, oclif itself ships a basic `cli-ux` library:
 
 ```js
 import {Command} from '@oclif/command'
