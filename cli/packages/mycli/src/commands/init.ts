@@ -5,6 +5,9 @@ const { prompt } = require("enquirer");
 const copy = require("copy-template-dir");
 const path = require("path");
 const { spawn } = require("yarn-or-npm");
+const chalk = require("chalk");
+const ora = require("ora");
+
 class Mycli extends Base {
   static description = "describe the command here";
 
@@ -29,20 +32,20 @@ class Mycli extends Base {
     // debug("parsing flags", flags);
 
     if (typeof flags.name === "undefined") {
-      if (this.config && this.config.name) {
-        flags.name = this.config.name;
-      } else {
-        flags.name = await prompt({
-          type: "input",
-          name: "name",
-          message: "What is the folder name?"
-        })
-          .then(({ name }: { name: string }) => name)
-          .catch(console.error)
-          .finally(() =>
-            console.log("You can specify this with the --name flag in future")
-          );
-      }
+      flags.name = await prompt({
+        type: "input",
+        name: "name",
+        message: `What is the folder ${chalk.cyan("name")}?`
+      })
+        .then(({ name }: { name: string }) => name)
+        .catch(console.error)
+        .finally(() =>
+          console.log(
+            `You can specify this with the ${chalk.magenta(
+              "--name"
+            )} flag in future`
+          )
+        );
     }
     const name = flags.name;
 
@@ -53,8 +56,12 @@ class Mycli extends Base {
     copy(inDir, outDir, vars, async (err: Error, createdFiles: string[]) => {
       if (err) throw err;
       process.chdir(outDir);
-      const { stdout } = await spawn(["install"]);
-      console.log(stdout);
+      const spinner = ora({
+        text: "Installing dependencies",
+        spinner: "moon"
+      }).start();
+      const child = await spawn(["install"]);
+      child.on("close", () => spinner.succeed());
     });
   }
 }

@@ -8,6 +8,7 @@
   "dependencies": {
     "ansi-colors": "^4.1.1",
     "conf": "^6.2.0",
-    "enquirer": "^2.3.2"
+    "enquirer": "^2.3.2",
+    "sign-bunny": "^1.0.0"
   }
 }

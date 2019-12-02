@@ -8,14 +8,16 @@ const dev = fs.existsSync(project);
 if (dev) {
   require("ts-node").register({ project });
 }
-
-const recognizedCommands = ["init", "serve", "build", "login"];
-if (process.argv.length > 2 && recognizedCommands.includes(process.argv[2])) {
-  require(`../${dev ? "src" : "lib"}`)
-    .run()
-    .catch(require("@oclif/errors/handle"));
-} else {
-  require(`../${dev ? "src" : "lib"}/commands/init`)
-    .run()
-    .catch(require("@oclif/errors/handle"));
-}
+require(`../${dev ? "src" : "lib"}`)
+  .run()
+  .catch(require("@oclif/errors/handle"));
+// const recognizedCommands = ["init", "serve", "build", "login"];
+// if (process.argv.length > 2 && recognizedCommands.includes(process.argv[2])) {
+//   require(`../${dev ? "src" : "lib"}`)
+//     .run()
+//     .catch(require("@oclif/errors/handle"));
+// } else {
+//   require(`../${dev ? "src" : "lib"}/commands/init`)
+//     .run()
+//     .catch(require("@oclif/errors/handle"));
+// }
