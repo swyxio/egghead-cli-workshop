@@ -4,7 +4,7 @@ var debug = require("debug")("mycli:init");
 const { prompt } = require("enquirer");
 const copy = require("copy-template-dir");
 const path = require("path");
-
+const { spawn } = require("yarn-or-npm");
 class Mycli extends Base {
   static description = "describe the command here";
 
@@ -50,10 +50,11 @@ class Mycli extends Base {
     const inDir = path.resolve(__dirname, "../templates/rollup-react");
     const outDir = path.join(process.cwd(), name);
 
-    copy(inDir, outDir, vars, (err: Error, createdFiles: string[]) => {
+    copy(inDir, outDir, vars, async (err: Error, createdFiles: string[]) => {
       if (err) throw err;
-      createdFiles.forEach(filePath => console.log(`Created ${filePath}`));
-      console.log("done!");
+      process.chdir(outDir);
+      const { stdout } = await spawn(["install"]);
+      console.log(stdout);
     });
   }
 }
