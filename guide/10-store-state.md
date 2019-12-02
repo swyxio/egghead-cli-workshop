@@ -72,7 +72,7 @@ Tip: you can write separators in your choice array:
 const colors = require('ansi-colors');
 const { prompt } = require('enquirer');
 
-prompt(({
+prompt({
   type: 'select',
   name: 'separator-example',
   message: 'Pick your favorite color',
@@ -87,7 +87,7 @@ prompt(({
     'lemon',
     'orange'
   ]
-}))
+})
   .then(answer => console.log('Answer:', answer))
   .catch(console.error);
 ```
