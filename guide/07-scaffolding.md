@@ -39,9 +39,13 @@ copy(inDir, outDir, vars, (err, createdFiles) => {
   console.log('done!')
 })
 
-// promise based alternative
-const {promisify} = require('utils')
-promisify(copy(inDir, outDir, vars))
+// promise based
+(new Promise((yay, nay) => {
+  copy(inDir, outDir, vars, (err, createdFiles) => {
+    if (err) nay(err)
+    else yay(createdFiles)
+  })
+}))
   .then(() => console.log('done'))
   .catch(err => throw err)
 ```
