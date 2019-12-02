@@ -1,8 +1,9 @@
-import { Command, flags } from "@oclif/command";
+import { flags } from "@oclif/command";
+import Base from "../base";
 var debug = require("debug")("mycli:init");
 const { prompt } = require("enquirer");
 
-class Mycli extends Command {
+class Mycli extends Base {
   static description = "describe the command here";
 
   static flags = {
@@ -22,19 +23,24 @@ class Mycli extends Command {
   static strict = false;
   async run() {
     const { args, flags } = this.parse(Mycli);
-    debug("parsing args", args);
-    debug("parsing flags", flags);
+    // debug("parsing args", args);
+    // debug("parsing flags", flags);
+
     if (typeof flags.name === "undefined") {
-      flags.name = await prompt({
-        type: "input",
-        name: "name",
-        message: "What is your name?"
-      })
-        .then(({ name }: { name: string }) => name)
-        .catch(console.error)
-        .finally(() =>
-          console.log("You can specify this with the --name flag in future")
-        );
+      if (this.config && this.config.name) {
+        flags.name = this.config.name;
+      } else {
+        flags.name = await prompt({
+          type: "input",
+          name: "name",
+          message: "What is your name?"
+        })
+          .then(({ name }: { name: string }) => name)
+          .catch(console.error)
+          .finally(() =>
+            console.log("You can specify this with the --name flag in future")
+          );
+      }
     }
     const name = flags.name || "world";
     this.log(`hello egghead ${name} from ./src/index.ts`);
