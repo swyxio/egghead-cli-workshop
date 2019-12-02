@@ -1,10 +1,13 @@
 {
   "private": true,
+  "name": "mycli",
   "workspaces": [
     "packages/*",
     "example"
   ],
   "dependencies": {
+    "ansi-colors": "^4.1.1",
+    "conf": "^6.2.0",
     "enquirer": "^2.3.2"
   }
 }
