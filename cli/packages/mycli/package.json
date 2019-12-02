@@ -1,6 +1,6 @@
 {
   "name": "mycli",
-  "version": "0.0.0",
+  "version": "0.9.0",
   "author": "swyx @sw-yx",
   "bin": {
     "mycli": "./bin/run"
@@ -19,6 +19,7 @@
     "jest": "^24.9.0",
     "jest-diff": "^24.9.0",
     "tslib": "^1",
+    "update-notifier": "^3.0.1",
     "yarn-or-npm": "^3.0.1"
   },
   "devDependencies": {
