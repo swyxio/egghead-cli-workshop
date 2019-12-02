@@ -9,7 +9,7 @@ type ConfigType = {
 export default abstract class Base extends Command {
   static config: null | ConfigType;
   async init() {
-    const { config, filepath } = await explorer.search();
+    const { config, filepath } = (await explorer.search()) || {};
     debug("parsing config", { config, filepath });
     this.config = config;
   }

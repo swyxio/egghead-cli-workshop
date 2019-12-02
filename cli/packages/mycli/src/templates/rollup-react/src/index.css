@@ -1,0 +1,20 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Strong opionion on position:relative */
+*,
+*::after,
+*::before {
+  position: relative;
+}
+/*
+*
+* Other CSS Resets
+* Tailwind includes its reset, Preflight, by default: https://unpkg.com/tailwindcss/dist/base.css
+* Others to reference: https://hankchizljaw.com/wrote/a-modern-css-reset/
+* Another one you could use: https://bitsofco.de/my-css-reset-base/
+*
+*/

@@ -2,6 +2,8 @@ import { flags } from "@oclif/command";
 import Base from "../base";
 var debug = require("debug")("mycli:init");
 const { prompt } = require("enquirer");
+const copy = require("copy-template-dir");
+const path = require("path");
 
 class Mycli extends Base {
   static description = "describe the command here";
@@ -33,7 +35,7 @@ class Mycli extends Base {
         flags.name = await prompt({
           type: "input",
           name: "name",
-          message: "What is your name?"
+          message: "What is the folder name?"
         })
           .then(({ name }: { name: string }) => name)
           .catch(console.error)
@@ -42,8 +44,17 @@ class Mycli extends Base {
           );
       }
     }
-    const name = flags.name || "world";
-    this.log(`hello egghead ${name} from ./src/index.ts`);
+    const name = flags.name;
+
+    const vars = { projectName: name };
+    const inDir = path.resolve(__dirname, "../templates/rollup-react");
+    const outDir = path.join(process.cwd(), name);
+
+    copy(inDir, outDir, vars, (err: Error, createdFiles: string[]) => {
+      if (err) throw err;
+      createdFiles.forEach(filePath => console.log(`Created ${filePath}`));
+      console.log("done!");
+    });
   }
 }
 
