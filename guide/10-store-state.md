@@ -70,9 +70,10 @@ Tip: you can write separators in your choice array:
 
 ```js
 const colors = require('ansi-colors');
-const { Select } = require('enquirer');
+const { prompt } = require('enquirer');
 
-const prompt = new Select({
+prompt(({
+  type: 'select',
   name: 'separator-example',
   message: 'Pick your favorite color',
   choices: [
@@ -86,9 +87,7 @@ const prompt = new Select({
     'lemon',
     'orange'
   ]
-});
-
-prompt.run()
+}))
   .then(answer => console.log('Answer:', answer))
   .catch(console.error);
 ```
