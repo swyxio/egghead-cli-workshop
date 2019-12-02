@@ -86,9 +86,8 @@ Set up Jest config:
 module.exports = {
   testEnvironment: 'node',
   moduleFileExtensions: ['ts', 'js', 'json'],
-  testMatch: ['<rootDir>/test/jest/**/*.ts'],
+  testMatch: ['<rootDir>/tests/jest/**/*.ts'],
   transform: {'\\.ts$': 'ts-jest/preprocessor'},
-  mapCoverage: true,
   coverageReporters: ['lcov', 'text-summary'],
   // collectCoverage: !!`Boolean(process.env.CI)`,
   collectCoverageFrom: ['src/**/*.ts'],
@@ -107,7 +106,7 @@ module.exports = {
 A basic (non Oclif) jest test looks like this - it can be helpful (and much faster) to test core logic outside of Oclif commands:
 
 ```js
-// /test/jest/foo.ts
+// /tests/jest/foo.ts
 import {add} from '../../src'
 // or in plain node.js
 // const {add} = require('../../src')
