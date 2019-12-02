@@ -1,4 +1,5 @@
 import { Command, flags } from "@oclif/command";
+var debug = require("debug")("mycli:init");
 
 class Mycli extends Command {
   static description = "describe the command here";
@@ -20,11 +21,11 @@ class Mycli extends Command {
   static args = [{ name: "file" }];
   static strict = false;
   async run() {
-    const { argv, flags } = this.parse(Mycli);
-    // console.log(argv);
+    const { args, flags } = this.parse(Mycli);
+    debug("parsing args", args);
+    debug("parsing flags", flags);
     const name = flags.name || "world";
     this.log(`hello egghead ${name} from ./src/index.ts`);
-    debugger;
   }
 }
 
