@@ -3,7 +3,7 @@
 
 
 👋 hi there! My name is [swyx](https://swyx.io) and this is the
-source material for [the Egghead CLI workshop!](https://swyx.io/teaching/CLI)!
+source material for [the Egghead CLI workshop!](https://egghead.io/courses/build-custom-cli-tooling-with-oclif-and-typescript?af=95qfq1)!
 
 ![image](https://user-images.githubusercontent.com/6764957/69071656-3c6d6b80-0a65-11ea-8aad-2ceeff65f913.png)
 
